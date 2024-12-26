@@ -6,3 +6,9 @@ local:   git config alias.lo "log --oneline"
 
 RAMAS:
 git checkout -b rama-nueva-local
+git add .
+git commit -m "añadiendo alias y rama"
+git push -u origin rama-nueva-local
+
+## lo mismo con rama-bug
+
