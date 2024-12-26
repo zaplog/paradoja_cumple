@@ -1,1 +1,8 @@
 Este es un código en python que utilice para comprobar y enseñarle a mis familiares lo anti intuitiva que es esta paradoja.
+
+ALIAS:
+global:   git config --global alias.st status
+local:   git config alias.lo "log --oneline"
+
+RAMAS:
+git checkout -b rama-nueva-local
