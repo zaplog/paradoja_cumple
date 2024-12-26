@@ -1,0 +1,1 @@
+Este es un código en python que utilice para comprobar y enseñarle a mis familiares lo anti intuitiva que es esta paradoja.
