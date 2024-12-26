@@ -12,3 +12,37 @@ git push -u origin rama-nueva-local
 
 ## lo mismo con rama-bug
 
+BISECT:
+git bisect start
+status: waiting for both good and bad commits
+
+C:\Users\gongo\Desktop\DCA\prac 9>git lo
+7a503c9 (HEAD -> rama-bug, origin/rama-bug) BUG
+09f60ce añadiendo rama-bug
+24cf4d7 (origin/rama-nueva-local, rama-nueva-local) añadiendo alias y rama
+5d068aa (origin/master, master) first commit
+
+C:\Users\gongo\Desktop\DCA\prac 9>git bisect bad 7a503c9
+status: waiting for good commit(s), bad commit known
+
+C:\Users\gongo\Desktop\DCA\prac 9>git bisect good 09f60ce
+7a503c93003021588e79fbd138add87d074db35e is the first bad commit
+commit 7a503c93003021588e79fbd138add87d074db35e
+Author: Gonzalo Martín Zapata López <gmzl1@gcloud.ua.es>
+Date:   Thu Dec 26 18:18:48 2024 +0100
+
+    BUG
+
+ paradojaCumple.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+HOOK:
+crearé un hook pre-commit que evite añadir archivos tipo .log
+
+al añadir un .log y realizar commir sucede esto:
+C:\Users\gongo\Desktop\DCA\prac 9>git add prueba.log
+
+C:\Users\gongo\Desktop\DCA\prac 9>git commit -m "probando hook"
+ERROR: No puedes hacer commit de archivos .log
+
+
